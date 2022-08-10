@@ -1,0 +1,269 @@
+.ricky{
+    background: black;
+    padding: 10px;
+    z-index: 0;
+    
+}
+#vest{
+    margin-top: 5%;
+}
+
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .left{
+        overflow-x: hidden;
+    }
+    #vest{
+        margin-top: -0%;
+    }
+    .ricky{
+        display: none;
+    }
+    #with{
+        
+        background-color: white;
+    }
+    
+    #mat{
+        color: black;
+    }
+    #kola{
+        width: 100%;
+        cursor: pointer;
+    }
+    #tolu{
+        width: 100%;
+        cursor: pointer;
+    }
+    #akara{
+        border-bottom: 1px solid black;
+    }
+    
+    #not{
+        width: 100%;
+    }
+    #nast{
+        width: 100%;
+    }
+    
+    #oya{
+        margin-top: 70%;
+    }
+    #oye{
+        margin-top: -120%;
+    }
+    #end{
+        margin-top: 69%;
+    }
+    #bako{
+        margin-top: -120%;
+    }
+    #neco p{
+        margin-right: 39%;
+    }
+    #ramat{
+        margin-top: 56%;
+    }
+    .two{
+        margin-top: 40%;
+    }
+    
+    
+}
+
+.rocky{
+    margin-left: 60%;
+}
+.rocky ul{
+    list-style-type: none;
+    box-sizing: border-box;
+}
+.rocky li{
+    word-spacing: 30px;
+    display: inline-block;
+    color: white;
+}
+/*  */
+.with{
+    background:rgb(44,94,173);
+    padding: 10%;
+}
+.mat{
+    color: white;
+    
+}
+.mat h1{
+    font-size: 50px;
+    font-weight:bold;
+}
+.mat p{
+    font-size:20px;
+    font-weight: none;
+}
+.kola{
+    width: 40%;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(242,109,33);
+    color: white;
+    cursor: pointer;
+}
+.kola:hover{
+    background: rgb(243, 97, 12);
+    transition: 1s;
+}
+.tolu{
+    width: 40%;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255,255,255);
+    color: black;
+    cursor: pointer;
+}
+.tolu:hover{
+    background:rgb(250, 194, 162) ;
+    transition: 1s;
+}
+.lagos{
+    text-align: center;
+}
+/*  */
+#oma{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+/*  */
+.blue{
+    background: rgb(249,249,249);
+    
+}
+/*  */
+.left{
+    background-color: rgb(255,255,255);
+}
+.mass{
+    text-align: center;
+}
+/*  */
+.pen{
+    background: rgb(241,241,241);
+}
+/*  */
+#yam{
+    background: rgb(249,249,249);
+}
+/*  */
+.rula{
+    background: rgb(255,255,255);
+}
+/*  */
+.socket{
+    background: rgb(12,40,74);
+    padding: 20px;
+    color: white;
+}
+/*  */
+.hop{
+    background: rgb(241,241,241);
+    padding: 10%;
+}
+/*  */
+.dele{
+    background: rgb(248,248,248);
+}
+/*  */
+.fone{
+    text-align: center;
+}
+/*  */
+.dwaft{
+    background: rgb(246,247,249);
+    padding-bottom: 20%;
+}
+.ware{
+    text-align: center;
+}
+.fwear a{
+    text-decoration: none;
+}
+.vane{
+    float: left;
+    
+}
+.two{
+    margin-left: 20%;
+}
+#ramat{
+    text-align: center;
+    
+}
+/*  */
+#neco p {
+    text-align: center;
+    margin-top: -20%;
+    margin-left: 19%;
+}
+#neco a{
+    text-align: center;
+    margin-left: 10rem;
+}
+/*  */
+#ife{
+    border: 1px solid rgb(207, 195, 195);
+    border-radius: 15px;
+}
+#ife:hover{
+    margin-top: -1%;
+    transition: 1s;
+}
+#akar{
+    border: 1px solid rgb(207, 195, 195);
+    border-radius: 15px;
+}
+#akat{
+    border: 1px solid rgb(207, 195, 195);
+    border-radius: 15px;
+}
+#key{
+    border: 1px solid rgb(207, 195, 195);
+    border-radius: 15px;
+}
+#akar:hover{
+    margin-top: -1%;
+    transition: 1s;
+}
+#akat:hover{
+    margin-top: -1%;
+    transition: 1s;
+}
+#key:hover{
+    margin-top: -1%;
+    transition: 1s;
+}
+/*  */
+.tual{
+    background: rgb(249,249,249);
+}
+.tuaal{
+    text-align: center;
+}
+.racky{
+    text-align: center;
+    background: black;
+    color: white;
+    z-index: 0;
+}
+/*  */
+.bolu{
+    background: rgb(57,57,77);
+    color: white;
+}
+.bolu ul{
+    list-style-type: none;
+}
+

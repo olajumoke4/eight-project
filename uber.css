@@ -1,0 +1,52 @@
+body{
+    background: #F8F8F9;
+    overflow-x: hidden;
+}
+label{
+    display: block;
+    padding-top: 12px
+}
+@media screen and (max-width:990px){
+    img{
+        width: 100%;
+        height: 50px;
+    } 
+    #tao{
+        height: 200px;
+    }
+    button{
+        width: 50%;
+        
+    } 
+    h6{
+        width: 50%;
+    }
+
+
+    body{
+        overflow-x: hidden;
+    }
+
+}
+input{
+    width: 30%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+}
+button{
+    width: 10;
+    text-align: start;
+    border: none;
+    height: 40px;
+    background: #0F868C;
+    color: white;
+} 
+h6{
+    font-size: 10px;
+    padding-top: 15px;
+    width: 30%;
+}
+.jummy{
+    margin: 0px auto;
+}

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PIM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<style>
+    body{
+    overflow-x: hidden;
+}
+.rock{
+    margin-top: 20px;
+    
+}
+@media screen and (max-width:768px){
+    body{
+        overflow-x:hidden;
+      }
+      .kid{
+        width: 70%;
+      }
+}
+.mum{
+    margin-top: 100px;
+}
+.rock button{
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    transform: rotate(-90deg);
+    margin-top: 30px;
+    position: fixed;
+    top: 5px;
+    z-index: 0;
+}
+.ope{
+    margin-left: 26%;
+}
+.ope ul{
+    list-style-type: none;
+   
+}
+.ope li{
+    color: rgb(68,68,68);
+    padding: 5px;
+}
+.ope li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.dad{
+    margin-left: 56px;
+    transform: translateY(-68%);
+    z-index: 100;
+}
+.lade{
+    margin-left: 73%;
+    transform: translateY(-150px);
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.lady{
+    margin-left: 93%;
+    transform: translateY(-190px);
+    border: 1px solid rgb(64,84,178);
+    background: rgb(64,84,178);
+    width: 58px;
+    position: fixed;
+    bottom: 160px;
+}
+
+.toy{
+    background: rgb(102,152,207);
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 50px;
+    margin-left: 90px;
+
+}
+.you{
+    margin-left: 88px;
+}
+#you{
+    background: rgb(51,104,156);
+    padding: 19px;
+    color: white;
+    font-weight: bold;
+}
+#you:hover{
+    cursor: pointer;
+}
+#your{
+    background: rgb(239,239,239);
+    padding: 19px;
+    font-weight: bold;
+}
+#your:hover{
+    background: rgb(211, 207, 207);
+    cursor: pointer;
+}
+#out{
+    background: rgb(239,239,239);
+    padding: 19px;
+    font-weight: bold;
+}
+#out:hover{
+    background: rgb(211, 207, 207);
+    cursor: pointer;
+}
+#our{
+    background: rgb(239,239,239);
+    padding: 19px;
+    font-weight: bold;
+}
+
+.kid{
+    margin-left: 7%;
+}
+#sam{
+    color: rgb(144,148,154);
+    font-weight: bold;
+}
+.sam{
+    background: rgb(0,0,255);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+#kid{
+    width: 100%;
+    padding: 15px;
+    border-color: rgb(144,148,154);
+}
+
+.olamide{
+    background: rgb(102,152,207);
+    padding: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.love{
+    margin-left: 20%;
+}
+#love{
+    background: rgb(248,248,248);
+    border: 1px solid rgb(177, 170, 170);
+    border-radius: 4px;
+    color: rgb(101,101,101);
+    padding: 8px;
+}
+
+.thank{
+    background: rgb(102,152,207);
+    padding: 30px;
+    color: white;
+
+}
+.thank ul{
+    list-style-type: none;
+}
+.thank li:hover{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.sleep{
+    background: rgb(51,104,156);
+    color: white;
+}
+#sleep{
+    margin-left: 80%;
+    border: 1px solid white;
+    padding: 9px;
+    border-radius: 360px;
+    transform: translateY(-38px);
+}
+#sleep:hover{
+    background: rgb(114, 114, 153);
+}
+#fool{
+    margin-left: 70%;
+    border: 1px solid white;
+    padding: 9px;
+    border-radius: 360px;
+}
+
+</style>
+</head>
+<body cz-shortcut-listen="true">
+    <div class="life">
+        <div class="rock">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">MENU</button>
+
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="">
+                    <h5 id="offcanvasTopLabel">
+                    <div class="ope">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <ul style="border-bottom:50px;">
+                                    <a href="zoom.html" target="_blank">zoom</a><br>
+                                    <a href="niger.html" target="_blank">niger</a><br>
+                                    <a href="uber.html" target="_blank">uber</a><br>
+                                    <a href="value.html" target="_blank">value</a><br>
+                                </ul>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <ul>
+                                    <a href="niger2.html" target="_blank">niger2</a><br>
+                                    <a href="neco.html" target="_blank">neco</a><br>
+                                    <a href="businessummit.html" target="_blank">businessummit</a><br>
+                                    <li>08 CONTACT US</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  </h5>
+                </div>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+        </div>
+        <div class=" mum">
+            <div class="dad">
+                <img src="img/pim.png" alt="image" width="190px">
+            </div>
+            <div class="lade">
+                <p>CONTACT US</p>
+            </div>
+            <div class="lady">
+                <img src="img/jui.png" alt="image" width="50px">
+            </div>
+       </div>
+    </div>
+    
+    <div>
+        <div class="toy">
+                CONTACT
+        </div>
+        <div class="you">
+            <div class="container">
+                <div class="row row-cols-2">
+                  <div class="col" id="you">CONTACT FORM</div>
+                  <div class="col" id="your">PRODUCT DONATION REQUEST</div>
+                  <div class="col" id="out">DEALER ENQUIRY FORM</div>
+                  <div class="col" id="our"></div>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <div class="kid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <img src="img/contact.png" alt="image" width="100%">
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <form action="https://olajumokeblessing.ng/PMI-Project/PMI.html" name="form1">
+                        <label for="Name" id="sam">Name (required)</label><br>
+                        <input type="text" id="kid" name="name">
+                        <br>
+                        <label for="Email" id="sam">Email (required)</label><br>
+                        <input type="Email" name="email" id="kid">
+                        <br>
+                        <label for="Message" id="sam">Message</label><br>
+                        <textarea name="Message" cols="70" id="wiz" rows="10"></textarea>
+                        <button class="sam">Contact Us</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <div class="olamide">
+        <div class="container">
+            <p>Our Locations</p>
+            <h3>We have branches all over the world.</h3>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <h3>Amsterdam</h3>
+                    <address>
+                        Keizerzgracht 555 <br>
+                        1017 DR Amsterdam, The Netherlands <br>
+                        Customer Service: 800.251.4535 <br>
+                        Phone: (011)+31 20794 4840 <br>
+                    </address>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <h3>San Francisco</h3>
+                    <address>
+                        395 Oyster Point Blvd., Suite 225 <br>
+                        South San Francisco, CA 94080 <br>
+                        Customer Service for Slant Collections: <br>
+                        1-877-367-3015 <br>
+                        Customer Service for Private Label: <br>
+                        1-866-428-1176 <br>
+                        Phone: 650.238.1009 <br>
+                    </address>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <h3>Bentonville</h3>
+                    <address>
+                        206 SW 8th St Suite 116 <br>
+                        Bentonville AR 72712 <br>
+                        Customer Service: 800.251.4535 <br>
+                        Phone: 206.441.1400 <br>
+                    </address>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <h3>Seattle</h3>
+                    <address>
+                        2401 Elliott Avenue 4th Floor <br>
+                        Seattle, WA 98121 <br>
+                        Customer Service: 800.251.4535 <br>
+                        Phone: 206.441.1400 <br>
+                    </address>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <h3>Manaus</h3>
+                    <address>
+                        Rua Jutaí, 500 – Distrito Industrial <br>
+                        CEP 69075-130 <br>
+                        Manaus/AM, Brazil <br>
+                        Phone: +55 (92) 3615-3404 <br>
+                    </address>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <h3>Shanghai</h3>
+                    <address>
+                        Shanghai Int’l Ocean Shipping Building <br>
+                        23rd Floor 720 Pu Dong Ave. <br>
+                        Pu Dong New District, Shanghai, China <br>
+                        200120 <br>
+                        Customer Service: 800.251.4535 <br>
+                        Phone: 86.21.50366.350 <br>
+                    </address>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <h3>Manila</h3>
+                    <address>
+                        PMI c/o Ammex I-Support <br>
+                        Robinsons Cyberscape Alpha 9th Floor <br>
+                        Garnet Road, Ortigas <br>
+                        Pasig City 1605, Philippines <br>
+                        Customer Service: 800.251.4535 <br>
+                        Phone: 800.251.4535 <br>
+                        Fax: 206 260 8683 <br>
+                    </address>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <h3>Shenzhen</h3>
+                    <address>
+                        17th Floor, Ludan Building, No. 1011, <br>
+                        East Binghe Road, Luohu District, <br>
+                        Shenzhen, Guangdong 518001, CHINA <br>
+                        Customer Service for Slant col-sm-6 col-md-6lections and <br>
+                        Formation products: 866.428.1176 <br>
+                        Calling from outside China: +86 755-82291323 <br>
+                        Phone: 0755-82291323 <br>
+                    </address>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <h3>Rio</h3>
+                    <address>
+                        Praia de Botafogo, 370 – 11º floor <br>
+                        Botafogo – Rio de Janeiro/RJ Brazil <br>
+                        CEP 22250-904 <br>
+                        Phone: +55 (21) 3278-9700 <br>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <div class="love">
+        <i class="fa-brands fa-twitter" id="love">twitter</i>
+        <i class="fa-brands fa-facebook" id="love">facebook</i>
+    </div>
+    
+    <div class="thank">
+        <div class="container">
+            <p>CONTACT</p>
+            <h2>Get In Touch</h2>
+            <ul>
+                <li><i class="fa-solid fa-arrow-right-long"></i> JOBS</li>
+                <li><i class="fa-solid fa-arrow-right-long"></i> PRODUCTS DONATIONS</li>
+                <li><i class="fa-solid fa-arrow-right-long"></i> DEALER INQUIRY FORMS</li>
+                <li><i class="fa-solid fa-arrow-right-long"></i> CONTACT</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="sleep">
+        <div class="container">
+            <p>© 2022 PMI Worldwide. All rights reserved.&nbsp; Site Terms &amp; Privacy Policy</p> &nbsp; <i class="fa-brands fa-linkedin-in" id="fool"></i> <i class="fa-brands fa-facebook" id="sleep"></i>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

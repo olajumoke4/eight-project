@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>About NECO-National Examination Council</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+		<style>
+			.crazy{
+				background-image: url(img/neco2.jpg);	
+				height: 700px;
+			}
+            @media screen and (max-width:990px){
+    .end{
+        display: none;
+    }
+}
+.end{
+    font-family: Helvetica, Arial, sans-serif;
+    word-spacing: 20px;
+    background: white;
+    height: 100px;
+    cursor: pointer;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+} 
+@media screen and (max-width: 990px){
+	.end{
+		display: none;
+	}
+}
+.end{
+    transform: translateY(-330px);
+} 
+
+.end a:hover{
+    border-bottom: 1px solid green;
+}
+div.drop{
+    width: 100px;
+    position: relative;
+    margin-left: 300px;
+}
+div.drop:hover div.down{
+        display:block;
+}
+span{
+    display: inline-block;
+}
+div.down{
+    width: 800px; 
+    background: white;
+    padding: 20px;
+    padding-left: 150px;
+    word-spacing: 50px;
+    border: 1px solid black;
+    position: absolute;
+    display:none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+div.down a{ 
+    display: inline;
+    color: black;
+}
+div.drop{
+    transform: translateY(-65px);
+}
+#zoom{
+    margin-left: 400px;
+}
+#zoom{
+    transform: translateY(-90px);
+}
+div.pick{
+    width: 100px;
+    position: relative;
+    margin-left: 500px;
+}
+div.pick:hover div.it{
+        display:block;
+}
+span{
+    display: inline-block;
+}
+div.it{
+    width: 500px; 
+    background: white;
+    padding: 20px;
+    padding-left: 100px;
+    word-spacing: 20px;
+    border: 1px solid black;
+    position: absolute;
+    display:none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+div.it a{ 
+    display: inline;
+    color: black;
+}
+.pick{
+    transform: translateY(-110px);
+}
+div.pack{
+    width: 100px;
+    margin-left: 650px;
+    position: relative;
+}
+div.pack:hover div.up{
+        display:block;
+}
+span{
+    display: inline-block;
+}
+div.up{
+    width: 700px; 
+    background: white;
+    padding: 20px;
+    padding-left: 100px;
+    word-spacing: 2px;
+    margin-left: -200px;
+    border: 1px solid black;
+    position: absolute;
+    display:none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+div.up a{ 
+    color: black;
+}
+.pack{
+    transform: translateY(-160px);
+}
+.get{
+    transform: translateY(-140px);
+}
+.get{
+    margin-left: 780px;
+}
+div.cont{
+    width: 100px;
+    position: relative;
+    margin-left: 950px;
+}
+span{
+    display: inline-block;
+}
+.cont{
+    transform: translateY(-188px);
+}
+.supp a{
+    margin-left: 1050px;
+}
+.supp{
+    transform: translateY(-213px);
+}
+.last{
+    transform: translateY(-100px);
+}
+.last{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    padding-left: 50px;
+}
+#ssb-container{
+    padding: 5px;
+    width: 180px;
+    height: 50px;
+    display: block;
+    line-height: 45px;
+    position: fixed;
+    z-index: 1;
+    right: 1px;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #ffffff;
+}
+#ssb-container{
+    transform: translateY(-200px);
+}
+#mad{
+    width: 600px;
+    height: 500px;
+    font-size: 18px;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 30px;
+    padding: 50px;
+    overflow: scroll;
+    background: white;
+    color: #968585;
+    border-radius: 5px;
+    opacity: 0.9;
+    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.2);
+    margin-left: 500px;
+}
+.cha{
+    transform: translateY(100px);
+}
+@media screen and (max-width:990px){
+    #mad{
+        width: 400px;
+        margin-left: 20px;
+    } 
+	.end{
+		display: none;
+	}
+}
+@media screen and (max-width:990px){
+    img{
+        width: 100%;
+        height: 300px;
+    }
+}
+@media screen and (max-width:990px){
+    .much{
+        display: block;
+        background: white;
+        width: 100%;
+    }
+    .much img{
+        width: 100px;
+        height: 100px;
+    }
+    .much{
+        transform: translateY(-300px);
+    }
+}
+@media screen and (min-width:600px){
+    .much{
+        display: none;
+    }
+}
+@media screen and (max-width:990px){
+    .mode{
+        float: right;
+        font-size: 30px;
+    }
+    .mode{
+        transform: translatey(-370px);
+    }
+    .mode .fall{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+        line-height: 50px;
+    }
+}
+@media screen and (min-width:600px){
+    .mode{
+        display: none;
+    }
+}
+@media screen and (max-width:990px){
+    .core{
+        display: none;
+    }
+}
+.core{
+    border-bottom: #f0e1e1;
+}
+@media screen and (min-width:600px){
+    .the{
+        display: none;
+    }
+}
+@media screen and (max-width:990px){
+    .the{
+        display: block;
+        border-bottom: 1px solid #c7b9b9;
+    }
+    .the img{
+        height: 100px;
+        width: 100px;
+    }
+}
+.two{
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+@media screen and (max-width:990px){
+    .two{
+        display: none;
+    }
+}
+@media screen and (min-width:600px){
+    .toe{
+        display: none;
+    }
+}
+@media screen and (max-width:990px){
+    .toe{
+        display: block;
+        line-height: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        padding: 30px;
+    }
+    .toe img{
+        width: 400px;
+        height: 400px;
+    }
+}
+.ban{
+    color: white;
+    padding: 50px;
+    background: rgba(1, 36, 1, 0.993);
+}
+.ban table{
+    width: 200px;
+    border: 1px #c7b9b9;
+}
+#free{
+    background: #968585;
+    color: white;
+    width: 100%;
+    height: 100px;
+    padding: 30px;
+    font-size: 20px;
+}
+@media screen and (max-width:990px){
+    #free{
+        background: #968585;
+        color: white;
+        width: 100%;
+        height: 70px;
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+.fes{
+    margin-left: 1050px;
+    position: fixed;
+    z-index: 1;
+}
+.fes p{
+    margin-left: 120px;
+}
+.fes{
+    transform: translateY(150px);
+}
+@media screen and (max-width:990px){
+    .fes img{
+        width: 50px;
+        height: 50px;
+    }
+    .fes{
+        margin-left: 220px;
+        position: fixed;
+        z-index: 1;
+    }
+    .fes{
+        transform: translateY(90px);
+    } 
+	#aby{
+        visibility: hidden;
+	}
+}
+		</style>
+	</head>
+	<body>
+     <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" ></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="value.html">value</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="PMI.html">PMI</a>
+              </li>
+              <li class="nav-item">
+                    <a class="nav-link" href="niger.html">niger</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="businessummit.html">businessummit</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="neco.html">neco</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="zoom.html">zoom</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="niger2.html">niger2</a>
+                  </li>  
+            </ul>
+          </div>
+        </div>
+         </nav> 
+		<img src="img/neco1.jpg" width="1260px" >
+		<div class="end" >
+			<a href="index.html" style="color: black;"><img src="img/Necologo.png" width="100px" height="100px" >Home</a>
+			<a href="niger.html" style="color: black; border-bottom: 1px solid green;"></a>
+			<div class="drop">
+				<span><a href="valuemax.html" style="color: black; text-decoration: none;">Valuemax</a></span>
+					<div class="down">
+							<a href="#">SSCEInternal</a>
+							<a href="#">SSCEExternal</a>
+							<a href="#">BECE</a>
+							<a href="#">NCEE</a>
+					</div>
+			</div>
+			<span id="zoom">
+				<a href="#" style="color: black;">Support</a>
+			</span>
+			<div class="pick">
+				<span><a href="pmicontact.html" style="color: black; text-decoration: none;">Pmiworldwide.com</a></span>
+					<div class="it">
+							<a href="#">Fees&Payment-ItemCodes</a>
+							<a href="#">MakePayment</a>
+					</div>
+			</div>
+			<div class="get">
+				<a href="agri.html" style="color: black;">Agribusiness.com </a>
+			</div>
+			<div class="pack">
+				<span><a href="uberhtml" style="color: black; text-decoration: none;">
+					 ubersignup</a></span>
+					<div class="up">
+							<a href="#">RegisterHere</a><br />
+							<a href="#">How to register and activate your account as a registration point</a>
+					</div>
+			</div>
+			<div class="cont">
+				<span>
+					<a href="#" style="color: black; text-decoration: none;">ContactUs</a>
+				</span>
+			</div>
+			<div class="supp">
+				<a href="zoom.html" style="color: black;">Zoom</a>
+			</div>
+		</div>
+		<div class="last">
+			<p><b>ABOUT NECO</b></p>
+		</div>
+		<div class="much">
+			<a href="index.html"><img src="img/Necologo.png" /></a>
+		</div> 
+			<div class="mode">
+				<i class="fa fa-bars" data-target="#badmus" data-toggle="modal" style="color: green;"></i> 
+			</div>
+				<div class="fall">
+					<div id="badmus" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>	
+								</div>
+								<div class="modal-body" style="overflow: scroll; height: 500px;">
+									<a href="index.html" style="color: black;">Home</a>
+									<a href="platinumactive.html" style="color: black;">Survivalfund/Active</a>
+									<dl>
+										<dt><a href="zoom.html" style="color: black;">Zoom</a></dt>
+										<dd>SSCE Internal</dd>
+										<dd>SSCE External</dd>
+										<dd>BECE</dd>
+										<dd>NCEE</dd>
+									</dl>
+									<a href="uber.html" style="color: black;">uber</a>
+									<dl>
+										<dt><a href="valuemax.html" style="color: black;">Valuemxonline</a></dt>
+										<dd>Fees & Item-payment codes</dd>
+										<dd>Make Payment</dd>
+									</dl>
+									<a href="pmicontact.html" style="color: black;">Pmiworldwide</a>
+									<dl>
+										<dt><a href="agri.html" style="color: black;">Agribusinesssumit</a></dt>
+										<dd>Register here</dd>
+										<dd>how to register and active your account as a registraton point</dd>
+									</dl>
+									<a href="#" style="color: black;">FAQ</a>
+									<dl>
+										<dt><a href="#" style="color: black;">Contact Us</a></dt>
+										<dd>State Officers</dd>
+										<dd>Zonal Liason Offices</dd>
+									</dl>
+									<a href="#" style="color: black;">Support</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="ssb-container" class="ssb">
+					<ul>
+						<li style="background: blue; list-style-type: none;">
+							<p><span class="fa fa-sign-in-alt"></span>NCEE Login</p>
+						</li>
+						<li style="background: purple; list-style-type: none;">
+							<p><span class="fa fa-sign-in-alt"></span>BECE Login</p>
+						</li>
+						<li style="background: green; list-style-type: none;">
+							<p><span class="fa fa-sign-in-alt"></span>SSCE Int Login</p>
+						</li>
+						<li style="background: grey; list-style-type: none;">
+							<p><span class="fa fa-sign-in-alt"></span>SSCE Ext Login</p>
+						</li>
+					</ul>
+				</div>
+				<div class="fes">
+					<abbr title="help"><p style="background: rgb(69, 18, 165); color: white;
+						width: 70px; border-radius: 10px; height: 30px;">? Help</p></abbr>
+					<abbr title="share with">
+						<img src="img/facebook.png" width="50px" height="50px"/>
+						<img src="img/twitter.png" width="50px" height="50px"/>
+						<img src="img/instagram.png" width="60px" height="60px"/>
+					</abbr>
+				</div>
+		<center><p style="font-size: 30px;font-family: Helvetica, Arial, sans-serif;color: rgb(32, 5, 95);">
+			BRIEF HISTORY OF THE CREATION OF NECO</p></center>
+        <div class="crazy">
+			<div class="cha">
+				<p id="mad">
+					The establishment of the National Examinations Council (NECO) in April 1999, 
+					is a culmination of reaction of the Federal Government to widespread escalating 
+					agitations for a national examination outfit that would be responsive to the Nigerian 
+					needs and demands as well as cope with the annually increasing number of secondary school 
+					candidates to take Senior School Certificate Examination (SSCE) nationwide. Series of panels 
+					had earlier been set up to address the issues before this vital decision was taken. <br /><br />
+	
+					The origin of the issues dates back to 1977, during the Murtala/Obasanjo administration, 
+					when there was a widespread leakage of West African School Certificate Examination WASSCE
+					 questions. The public outcry that greeted the mass leakage led the Federal Government to set 
+					 up the Sogbetun commission of enquiry with specific mandate to look into the remote causes 
+					 of the leakage and make appropriate recommendations to government. Key among the findings of 
+					 the committee was that the workload of WAEC was beyond its capacity, hence, it was difficult 
+					 for WAEC to effectively manage the conduct of a hitch-free examination. The Sogbetun 
+					 commission recommended among other things, the establishment of additional examination bodies
+					  to reduce the workload of WAEC and make it more efficient. The recommendation of the 
+					  committee was not implemented at the time. <br /><br />
+	
+					In 1982, WAEC admitted before the house of representatives committee on education
+					 that Nigeria needed to establish additional examination bodies with a view to ceding
+					  some of its responsibilities to enable it function more efficiently. As the problem 
+					  persisted, the Shehu Shagari government, set up the Angulu panel to review the 
+					  recommendations of the Sogbetun commission and make recommendations. The Angulu 
+					  panel recommended the establishment of three regional examination bodies each with
+					   a specific mandate different from one another. The Angulu panel’s recommendation was
+						also not implemented. The problem of WAEC’s inability to manage the ever-increasing 
+						numerous problems, became evident in 1989 to the extent that the Babangida administration 
+						had to act quickly in order to rescue Nigeria from ever increasing problems bedevilling
+						 WAEC leading to her inability to conduct confidence-inspiring examinations. Government
+						  at the time had to set up the Okoro panel and charged it to quickly review the 
+						  recommendations of all previous panels. The Okoro panel’s recommendations were
+						   virtually the same with those of Sogbetun (1977) and Angulu (1982), which was 
+						   also not immediately implemented. <br /><br />
+	
+					By 1991 when the late professor Babs Fafunwa saw the lack of political will to
+					 implement previous recommendations, he decided to set up a taskforce chaired by
+					  professor Osiyale, to articulate all the previous recommendations with a view to
+					   setting up the machinery for implementation. The report of the Osiyale taskforce,
+						led to the establishment of National Board for Educational Measurement (NBEM) and 
+						the National Business and Technical Examinations Board (NABTEB) in 1992, through the
+						 enabling decrees 69 and 70 establishing NBEM and NABTEB respectively, which were
+						  promulgated in 1993. The National Board for Educational Measurement (NBEM) took 
+						  charge of conducting the National Common Entrance <br /><br />
+	
+					Examination (NCEE) for admission of candidates into the Federal Unity Colleges (FUC’s)
+					 and the Suleja Academy. NBEM was also charged with the responsibility of conducting the
+					  Junior School Certificate Examination (JSCE) for Federal Unity Colleges and other allied 
+					  institutions that were hitherto conducted by WAEC. The National Business and Technical
+					   Examinations Board (NABTEB) took charge of conducting business, technical and trade
+						examinations that were also hitherto conducted by WAEC and the Royal Society of Arts 
+						(RSA) of London and the City & Guilds of London Institute. Consequently, the workload
+						 of WAEC was drastically reduced. <br /><br />
+	
+					In 1997, the Abacha administration set up the Etsu Nupe panel to re-examine the 
+					Nigerian education system. In the same year, the vision 2020 was set up by the 
+					Federal Government with a committee on review of the Nigeria’s Education system. 
+					Both the Etsu Nupe panel and the vision 2020 committee observed that in spite of 
+					the drastic reduction in its workload, WAEC’s challenges still persisted and therefore 
+					recommended the establishment of an indigenous examination body parallel to WAEC as
+					 Nigeria’s home-grown alternative examination body. The harmonized report of the two committees
+					 was published in January 1998. The published report was presented at the 46 th meeting of the
+					  National Council on Education (NCE) held at Abeokuta Ogun state in March 1999, where a 
+					  resolution to upgrade the National Board for Educational Measurement (NBEM) into a full-scale
+					   national examination outfit of the same standard as WAEC was passed. A policy to create the
+						National Examinations Council (NECO) was formulated. Consequently, NBEM became the nucleus
+						 of NECO. NBEM’s capacity was built by employing additional qualified personnel, acquiring
+						  more equipment and facilities and upgrading the existing ones. NBEM was therefore made 
+						  stronger and its capacity was upgraded and enhanced to meet international standards. NBEM 
+						  was then transformed to become National Examinations Council (NECO). NECO then commenced 
+						  its maiden Senior School Certificate Examination (SSCE) in June/July 2000, with resounding 
+						  uccess. NECO also successfully continued to discharge all the mandates of NBEM in addition 
+						  to the conduct of the Senior School Certificate Examination (SSCE) without prejudice to the
+						   existing functions and powers of WAEC. The enabling decree 33 of 1999 establishing the
+							National Examinations Council (NECO) became an act of parliament cited as the “National
+							 Examinations Council (NECO) (establishment) act 2002. <br /><br />
+				</p>
+			</div>
+		</div><br><br>
+		<div class="core">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<center><abbr title="Vision"><img src="img/neco3.png"/></abbr>
+						<h2>The Mision</h2>
+						<p>To deliver examinations whose results are 
+							trusted worldwide for their credibility.</p></center>
+					</div>
+					<div class="col-sm-4">
+						<center><abbr title="Target"><img src="img/neco4.png"/></abbr>
+						<h2>The Vision</h2>
+						<p>To become a major player in the global assessment industry.</p></center>
+					</div>
+					<div class="col-sm-4">
+						<center><abbr title="Handsake"><img src="img/neco5.png"/></abbr>
+						<h2>Core Value</h2>
+						<p>Redefining the future of the Nigerian child through quality assessment.</p></center>
+					</div>
+				</div>
+			</div>
+		</div><br /><br /><br /><br /><hr><br /><br />
+		<div class="the">
+			<center><abbr title="Vision"><img src="img/neco3.png"/></abbr>
+				<h2>The Mision</h2>
+				<p>To deliver examinations whose results are 
+					trusted worldwide for their credibility.</p></center>
+			<center><abbr title="Target"><img src="img/neco4.png"/></abbr>
+						<h2>The Vision</h2>
+					<p>To become a major player in the global assessment industry.</p></center>
+			<center><abbr title="Handsake"><img src="img/neco5.png"/></abbr>
+						<h2>Core Value</h2>
+				<p>Redefining the future of the Nigerian child through quality assessment.</p></center>
+		</div><br /><br />
+		<div class="two">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<h2>THE MANDATE</h2>
+						<P>Conduct of: National Common Entrance Examination (NCEE),
+							 Basic Education Certificate Examination (BECE), Senior
+							  School Certificate Examination (SSCE) Internal and External 
+							  The above mandate is propelled by the Council’s vision and mission
+							   statements, core value, slogan and Ethos <br /><br />
+							
+							The story of NECO and its achievements is a continuously developing 
+							one and cannot be completely told in a piece as short as this. However,
+							 as has been observed elsewhere, Perhaps, the greatest achievement of 
+							 NECO is that it has provided gainful employment for over a thousand
+							  Nigerians [and given hope to thousands more – candidates who had been
+							   able to keep their matriculation dates because of the timely release
+							    of their results by NECO].
+							</P>
+					</div>
+					<div class="col-sm-6">
+						<abbr title="pexels-photo-2105210"><img src="img/neco6.jpeg" /></abbr>
+					</div>
+				</div>
+			</div>
+		</div><hr>
+		<div class="toe">
+			<h2>THE MANDATE</h2>
+						<P>Conduct of: National Common Entrance Examination (NCEE),
+							 Basic Education Certificate Examination (BECE), Senior
+							  School Certificate Examination (SSCE) Internal and External 
+							  The above mandate is propelled by the Council’s vision and mission
+							   statements, core value, slogan and Ethos <br /><br />
+							
+							The story of NECO and its achievements is a continuously developing 
+							one and cannot be completely told in a piece as short as this. However,
+							 as has been observed elsewhere, Perhaps, the greatest achievement of 
+							 NECO is that it has provided gainful employment for over a thousand
+							  Nigerians [and given hope to thousands more – candidates who had been
+							   able to keep their matriculation dates because of the timely release
+							    of their results by NECO].
+							</P><br />
+				<center><abbr title="pexels-photo-2105210"><img src="img/neco6.jpeg" /></abbr></center>
+		</div>
+		<div class="ban">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<dl>
+							<dt>MAIN LINKS</dt>
+							<dd>Home</dd>
+							<dd>About Us</dd>
+							<dd>Contact Us</dd>
+							<dd>Our Examinations</dd>
+							<dd>FAQ</dd>
+						</dl><br /><br /><br />
+						<dl>
+							<dt>SUPPORT</dt>
+							<dd>Support Request</dd>
+						</dl>
+					</div>
+					<div class="col-sm-3">
+						<dl>
+							<dt>USEFUL LINKS</dt>
+							<dd>SSCE Internal</dd>
+							<dd>SSCE External</dd>
+							<dd>Mision & Vision</dd>
+							<dd>State Officers</dd>
+							<dd>Management</dd>
+						</dl>
+					</div>
+					<div class="col-sm-3">
+						<dl>
+							<dt>CONTACT US</dt>
+							<dd>Address</dd>
+							<dd>National Examination Council (NECO) Km8, Bilda Road, P.M.B 159,
+								 Minna Nigeria.</dd>
+						</dl>
+						<dl>
+							<dt>PHONES</dt>
+							<dd>08069232760,</dd>
+							<dd>08052218069, </dd>
+							<dd>08052218070, </dd>
+							<dd>08189342653, </dd>
+							<dd>08189342754 (24/7</dd>
+							<dd> SUPPORT LINES)</dd>
+						</dl>
+						<dl>
+							<dt>EMAIL</dt>
+							<dd>info@neco.gov.ng</dd>
+						</dl>
+					</div>
+					<div class="col-sm-3">
+						<caption>January 2022</caption>
+						<table border="1px">
+							<thead>
+								<tr style="background: #665f5f;">
+									<th title="monday">M</th>
+									<th title="tuesday">T</th>
+									<th title="wednesday">W</th>
+									<th title="thursday">TH</th>
+									<th title="friday">F</th>
+									<th title="saturday">S</th>
+									<th title="sunday">S</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr style="background: #665f5f;">
+									<td colspan="5" style="color: #c7b9b9;">whitespace</td>
+									<td>1</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>4</td>
+									<td>5</td>
+									<td>6</td>
+									<td>7</td>
+									<td>8</td>
+									<td>9</td>
+								</tr>
+								<tr style="background: #665f5f;">
+									<td>10</td>
+									<td>11</td>
+									<td>12</td>
+									<td>13</td>
+									<td>14</td>
+									<td>15</td>
+									<td>16</td>
+								</tr>
+								<tr>
+									<td>17</td>
+									<td>18</td>
+									<td>19</td>
+									<td>20</td>
+									<td>21</td>
+									<td>22</td>
+									<td>23</td>
+								</tr>
+								<tr style="background: #665f5f;">
+									<td>24</td>
+									<td>25</td>
+									<td>26</td>
+									<td>27</td>
+									<td>28</td>
+									<td>29</td>
+									<td>30</td>
+								</tr>
+								<tr>
+									<td>31</td>
+									<td colspan="6" style="color: #c7b9b9;">whitespace</td>
+								</tr>
+							</tbody>
+						</table>
+						<p> Nov </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<center><span id="free">© Copyright - National Examinations Council 2021</span></center>
+		<center id="cent" style="background: red; font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', 
+				Arial, sans-serif;">cAvEaT: This is a student project made for practice only and 
+				is not meant to be a clone of the original site</center>
+    </body>
+</html>
