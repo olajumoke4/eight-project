@@ -119,14 +119,14 @@
     font-weight: bold;
 }
 
-.kid{
+.kind{
     margin-left: 7%;
 }
-#sam{
+#james{
     color: rgb(144,148,154);
     font-weight: bold;
 }
-.sam{
+.james{
     background: rgb(0,0,255);
     color: white;
     font-weight: bold;
@@ -136,7 +136,7 @@
     font-size: 20px;
     cursor: pointer;
 }
-#kid{
+#kind{
     width: 100%;
     padding: 15px;
     border-color: rgb(144,148,154);
@@ -272,16 +272,19 @@
                     <img src="img/contact.png" alt="image" width="100%">
                 </div>
                 <div class="col-sm-6 col-md-6">
-                    <form action="https://olajumokeblessing.ng/PMI-Project/PMI.html" name="form1">
-                        <label for="Name" id="sam">Name (required)</label><br>
-                        <input type="text" id="kid" name="name">
+                    <form action="" name="form1">
+                        <label for="Name" id="james">Name (required)</label><br>
+                        <input type="text" id="nam" class="kind" name="name" onkeyup="theNameValidate()">
+                        <span id="inam"></span><br>
                         <br>
-                        <label for="Email" id="sam">Email (required)</label><br>
-                        <input type="Email" name="email" id="kid">
+                        <label for="Email" id="james">Email (required)</label><br>
+                        <input type="Email" id="num" name="email" class="kind" onkeyup="theNumValidate()" name="email">
+                        <span id="inum"></span><br>
                         <br>
-                        <label for="Message" id="sam">Message</label><br>
-                        <textarea name="Message" cols="70" id="wiz" rows="10"></textarea>
-                        <button class="sam">Contact Us</button>
+                        <label for="Message" id="james">Message</label><br>
+                        <textarea name="Message" cols="70" id="pas" class="kind" rows="10" onkeyup="thePasValidate()"></textarea>
+                        <span id="ipas"></span><br>
+                        <button class="james">Contact Us</button>
                     </form>
                 </div>
             </div>
@@ -434,8 +437,82 @@
     <div class="sleep">
         <div class="container">
             <p>© 2022 PMI Worldwide. All rights reserved.&nbsp; Site Terms &amp; Privacy Policy</p> &nbsp; <i class="fa-brands fa-linkedin-in" id="fool"></i> <i class="fa-brands fa-facebook" id="sleep"></i>
+            <center style="background: red; font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', 
+					Arial, sans-serif;">cAvEaT: This is a student project made for practice only and 
+					is not meant to be a clone of the original site</center>
+
         </div>
     </div>
+
+    <script>
+        function theNameValidate(){
+            let theTxt= document.getElementById("nam").value;
+            let onlyName = /^[A-Za-z]+$/;
+            let onlyNameLenght = /^[A-Za-z]+.{6,}$/;
+
+            if (theTxt.match(onlyNameLenght)){
+                document.getElementById("inam").innerHTML="<span style='color: green; font-size: 10px;'>Strong username</span>";
+                document.getElementById("nam").style.border="2px solid green";
+                return true;
+            }
+            
+            else if (theTxt.match(onlyName)){
+                document.getElementById("inam").innerHTML="<span style='color: purple; font-size: 10px;'>Not strong enough</span>";
+                document.getElementById("nam").style.border="2px solid purple";
+                return true;
+            }
+            
+            else {
+                document.getElementById("inam").innerHTML="<span style='color: red; font-size: 10px;'> this name is required with minimum of 6 characters!</span>";
+                document.getElementById("nam").style.border="2px solid red";
+                return false;
+             }
+        }
+
+
+        function theNumValidate(){
+            let theNum = document.getElementById("num").value;
+            let onlyNum = /^[0-9]+$/;
+            let onlyNumLenght = /^[0-9].{10,}$/;
+
+            
+            if (theNum.match(onlyNumLenght)){
+                document.getElementById("inum").innerHTML="<span style='color: green; font-size: 10px;'>Very good</span>";
+                document.getElementById("num").style.border="2px solid green";
+                return true;
+            }
+
+            else if (theNum.match(onlyNum)){
+                document.getElementById("inum").innerHTML="<span style='display: none'></span>";
+                document.getElementById("num").style.border="2px solid purple";
+                return true;
+            }
+
+            else {
+                document.getElementById("inum").innerHTML="<span style='color: red; font-size: 10px;'> Required in emails only with minimum of ten characters!</span>";
+                document.getElementById("num").style.border="2px solid red";
+                return false;
+             }
+        }
+
+
+        function thePasValidate(){
+            let thePas = document.getElementById("pas").value;
+            let onlyPassword = /^[a-zA-Z0-9!@#$%^&*]{8,}$/;
+
+            if (thePas.match(onlyPassword)){
+                document.getElementById("ipas").innerHTML="<span style='display: none;'></span>";
+                document.getElementById("pas").style.border="2px solid green";
+                return true;
+            }
+
+            else {
+                document.getElementById("ipas").innerHTML="<span style='color: red; font-size: 10px;'> textarea must be at least 8 characters</span>";
+                document.getElementById("pas").style.border="2px solid red";
+                return false;
+             }
+        }
+    </script>
 
 
     

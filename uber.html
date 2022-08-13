@@ -22,7 +22,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="value.html">value</a>
+                <a class="nav-link active" aria-current="page" href="niger2.html">niger2</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="PMI.html">PMI</a>
@@ -40,7 +40,7 @@
                     <a class="nav-link" href="zoom.html">zoom</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="niger2.html">niger2</a>
+                    <a class="nav-link" href="value.html">value</a>
                   </li>  
             </ul>
           </div>
@@ -53,25 +53,32 @@
         
                 
         </div>
-            </center>
+           </center>
 
         <center>
         <div class ="jummy">
         
-        <form name="validation"
-            <h1>Sign up with Uber</h1> 
-            
-          <label for="firstname">firstname:</label>
-           <input type="text" name="firstname" size="12" />
-            <label for="lastname">lastname:</label>
-            <input type="text" name="lastname" size="12" />
-            <label for="phonenumber">phonenumber:</label>
-            <input type="text" name="phonenumber" size="12" />
-            <label id="mum">Enter your email address </label>
-            <input type="Email" placeholder="Email">
-            <label for="passid">Password:</label>
-             <input type="password" name="passid" size="12" /><br><br>
+        <form action="">
+        <h1>Sign up for uber</h1>
+                  <label for="">first name</label><br>
+                  <input type="text" placeholder="firstname" name="firstname" id="first" onkeyup="valuemax()" required><br>
+                  <span id="tunji"></span><br>
+                  <label for="">last name</label><br>
+                  <input type="text" placeholder="lastname" name="lastname" id="last" onkeyup="maxvalue()" required><br>
+                  <span id="ola"></span><br><br>
+                  <label for="">phone number</label><br>
+                  <input type="text" placeholder="phone number" name="phone number" id="phone" onkeyup="value()" required><br>
+                  <span id="tunde"></span><br>
+                  <label for="">email</label><br>
+                  <input type="text" placeholder="email" name="email" id="email" onkeyup="val()" required><br>
+                  <span id="tun"></span><br>
+                  <label for="">password</label><br>
+                  <input type="text" placeholder="password" name="password" id="pass" onkeyup="max()" required><br>
+                  <span id="kola"></span><br>
             <button onsubmit="myfunction()" type="submit" class="ola">Sign in</button>
+            </form>
+
+            
 
             <h6>By clicking "Sign up", you agree to Uber's 
                 Terms of Use and acknowledge you have read 
@@ -89,6 +96,66 @@
             </div>
         </center>
         <img src="img/john2.png" alt="myimages" id="tao"> 
+
+<script>
+function valuemax(){
+                  var x=document.getElementById('first').value;
+                  var p=/^[A-Z]+$/;
+
+                  if (x.match(p)){
+                        document.getElementById('tunji').innerHTML="<span style='color:green;  font-size:15px;'>valid name</span>";
+                        document.getElementById('first').style.border='2px solid green';
+                        document.tunji.focus();
+                        return true
+                  }
+                  else {
+                        document.getElementById('tunji').innerHTML="<span style='color:red;  font-size:15px;'>Invalid name </span>";
+                        document.getElementById('first').style.border='2px solid red';
+                        document.tunji.focus();
+                        return false
+                  }
+                  
+                  }
+
+                  function maxvalue(){
+                  var x=document.getElementById('last').value;
+                  var p=/^[A-Z]+$/;
+
+                  if (x.match(p)){
+                        document.getElementById('ola').innerHTML="<span style='color:green;  font-size:15px;'>valid name</span>";
+                        document.getElementById('last').style.border='2px solid green';
+                        document.tunji.focus();
+                        return true
+                  }
+                  else {
+                        document.getElementById('ola').innerHTML="<span style='color:red;  font-size:15px;'>Invalid name </span>";
+                        document.getElementById('last').style.border='2px solid red';
+                        document.tunji.focus();
+                        return false
+                  }
+                  
+                  }
+
+                  function value(){
+                    var x=document.getElementById('phone').value;
+                    var p=/^[A-Za-z]\w{7,14}$/;
+                    if (x.match(p)){
+                      document.getElementById('tunde').innerHTML="<span style='color:green;  font-size:15px;'>correct </span>";
+                      document.getElementById('phone').style.border='2px solid green';
+                      document.ola.focus();
+                      return true
+                    
+                    }
+                    else{
+                      document.getElementById('tunde').innerHTML="<span style='color:green;  font-size:15px;'>wrong </span>";
+                      document.getElementById('phone').style.border='2px solid green';
+                      document.ola.focus();
+                      return false
+
+                    }
+                  }
+</script>
+        
 
         
         
