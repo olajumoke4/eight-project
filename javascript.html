@@ -9,21 +9,23 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <style>
+    <!-- <style>
         * {
             box-sizing: border-box;
         }
 
         body {
-            background: pink;
-            color: blue;
+            background: ;
+            color: green;
             text-align: center;
             padding: 2rem
         }
-
+        #a1{
+            background-color: blueviolet;
+        }
         #a1 h2 {
             font-size: 25px;
-            font-weight: 600
+            font-weight: 600px;
         }
 
         #a1 input {
@@ -34,39 +36,43 @@
         }
 
         #a1 button {
-            height: 4vh;
-            width: 10%;
+            height: 5vh;
+            width: 20%;
             border-radius: 5px 0px;
-            background: pink;
+            background: green;
             color: blue;
-            margin-right: 20px;
+            margin-right: 10px;
         }
 
         #a1 button:hover {
             background: blue;
-            color: pink;
+            color: green;
         }
 
         #b2 {
-            transition: 500ms;
+            transition: 2000ms;
         }
 
         #b2 h1 {
-            font-size: 15px;
+            font-size: 5px;
+            padding: 20px;
+            font-weight: 100%;
 
         }
 
         #b2 h4:hover {
             transform: scale(1.2);
-            font-size: 30px;
-            font-weight: 700;
+            font-size: 15px;
+            font-weight: 100px;
+            padding: 20px;
+            margin-left: 20px;
 
         }
 
         #b2 h4 {
             color: green;
             border: 1px solid grey;
-            width: 100%;
+            width: 110%;
             text-align: center;
             padding: 10px;
             background: #aaa;
@@ -77,6 +83,7 @@
             text-align: center;
             margin-top: 5rem;
             transition: 450ms;
+            background-color: red;
         }
 
         #digi h4:hover {
@@ -98,6 +105,8 @@
         #icalc {
             margin-top: 6rem;
             margin-bottom: 2rem;
+            background-color: orange;
+            border-radius: 50px;
         }
 
         #icalc input {
@@ -257,21 +266,113 @@
 
 
 
+    </style> -->
+
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        .glo{
+            text-align: center;
+        }
+        .roy{
+            margin-left: 20px;
+        }
+        #a1{
+            background-color: gray;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            border-radius: 70px;
+            color: orangered;
+            box-shadow: 7px 10px 20px;
+        }
+        #b2{
+            background-color: blue;
+            text-align: center;
+            box-shadow: 1px 0px 10px;
+        }
+        #b2 p{
+            text-align: center;
+        }
+        #digi{
+            background-color: pink;
+            margin: 0 auto;
+            margin-bottom: 60px;
+            text-align: center;
+            border-radius: 15px;
+        }
+        #icalc{
+            background-color: aqua;
+            text-align: center;
+            margin: 20px;
+            width: 80%;
+            box-shadow: 1px 0px 15px;
+            border-radius: 10px;
+            color: darkslateblue;
+
+        }
+        #loa{
+            background-color: gray;
+            border-radius: 10px 20px 30px 50px;
+            margin: 0 auto;
+            margin-top: 50px;
+            color: coral;
+        }
+        #kris{
+            background-color: chartreuse;
+            margin-left: 40;
+            border-radius: 10px 40px 20px 20px;
+            color:darkgreen;
+        }
+        #year{
+            background-color: crimson;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 30px;
+            box-shadow: 3px 5px 7px 6px;
+            color: purple;
+        }
+        #mum{
+            background-color: darkolivegreen;
+            border-radius: 10px;
+            margin-top: 30px;
+            color: cornflowerblue;
+        }
+        #watch{
+            background-color: black;
+            color: palevioletred;
+            margin:0 auto;
+        }
+        #timer{
+            background-color: cornflowerblue;
+            text-align: center;
+            margin-top: 40px;
+            border-radius: 10px 20px 30px;
+            color: yellow;
+            margin-bottom: 40px;
+        }
+        #gue{
+            background-color: green;
+            margin: 0 auto;
+            color: red;
+            box-shadow: 1px 2px 11px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <h2 style="color: white;"> JAVASCRIPT PROJECT</h2>
+    <div class="glo">
+        <h2 style="color: palevioletred; font-family: 'Times New Roman', Times, serif;"> JAVASCRIPT PROJECT</h2>
     </div>
     <br />
-    <div class="container">
+    <div class="roy">
         <div class="row">
             <!--SIMPLE CALCULATOR-->
             <div class="col-sm-12 col-md-8" id="a1">
                 <h2>SIMPLE CALCULATOR</h2>
                 <input type="text" id="input1" placeholder="input number"> &nbsp; <span style="color: white;"
-                    id="span1"></span>
+                    id="span1"></span><br><br>
                 <input type="text" id="input2" placeholder="input number"> &nbsp; <span style="color: white;"
                     id="span2"></span>
                 <br />
@@ -281,27 +382,39 @@
                 <button type="button" onclick="three()">*</button>
                 <button type="button" onclick="four()">/</button>
             </div>
+        </div><br><br>
+        <p>This is basic simple calcultor in Javascript, i achieved this by grabbing values in those input and then summarize the output.</p>
 
             <!--Buhari countdown -->
             <div class="col-sm-12 col-md-4" id="b2">
-                <h1><b>BUHARI TENURE WILL BE OVER IN THE NEXT:</b></h1>
-                <h4>
+                <p><b>BUHARI TENURE WILL BE OVER IN THE NEXT:</b></p>
+                <p>
                     <span id="awo"></span>
                     <span id="lin"></span>
                     <span id="dig"></span>
                     <span id="azu"></span>
-                </h4>
+                </p>
             </div>
+            <p>This is just a countdown to show when buhari tenure will be over.......</p>
 
             <!--Digital Clock-->
             <div class="col-sm-12 col-md-4" id="digi">
                 <h2>DIGITAL CLOCK</h2>
                 <h4 id="clock"></h4>
             </div>
+            <p>step1:create a function"showtime</p>
+            <p>step2:create an instance of the date object</p>
+            <p>Step 3: Using the methods of Date object get “hours”, “minute” and “seconds”.</p>
+            <p>Step 4: Set AM/PM depending on the hour value. The Date object works on 24-hour format so we change hour back to 1 when it get’s larger than 12. The AM/PM also changes according to that.</p>
+            <p> Step 5: Now make a string using the same HH:MM:SS format changing the hour, minute, and second value with the values, we get from Date object methods.</p>
+            <p>Step 6: Now replace the string variable in the “div” using innerHTML property.</p>
+            <p>Step 7: To call the function every second use setInterval() method and set time-interval as 1000ms which is equal to 1s.<p>
+          <p>Step 8: Now call the function at the end to start function at exact reloading/rendering time as setInterval() will call first after 1s of rendering.<p>
+
 
             <!--INVESTMENT CALCULATOR-->
             <div class="col-sm-12 col-md-8" id="icalc">
-                <h2>INVESTMENT CALCULATOR</h2>
+                <p>INVESTMENT CALCULATOR</p>
                 <input type="text" id="input" placeholder="Amount">
                 <select id="select">
                     <option>In Month</option>
@@ -312,12 +425,13 @@
                     <option value="12">12 Month</option>
                 </select> <br /><br />
                 <button onclick="msg()" type="button">CALCULATE</button>
-                <h4 style="color: white;" id="ans"></h4>
+                <p style="color: blue;" id="ans"></p>
             </div>
+            <p>This is an investment calculator using javascript to display client Interest </p>
 
             <!--LOAN CALCULATOR-->
             <div class="col-sm-12 col-md-6" id="loa">
-                <h3>LOAN CALCULATOR</h3>
+                <p>LOAN CALCULATOR</p>
                 <input type="text" id="grab2" placeholder="Enter Loan Amount?">
                 <select id="select2">
                     <option>In Month</option>
@@ -331,13 +445,19 @@
                 <span style="color: white;" id="emp1"></span><br />
                 <span style="color: white;" id="emp2"></span><br />
                 <span style="color: white;" id="emp3"></span>
-            </div>
+            </div><br><br>
+            <p>
+                This is loan  calculator that shows client  Monthly Repayment, Interest &  total Amount to be paid using javascript
+            </p>
 
             <!-- PRAYER TIME FOR MUSLIMS-->
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-6" id="kris">
                 <h3>PRAYER TIME FOR MUSLIMS</h3>
                 <h5 style="color: white;" id="mus">angel</h5>
             </div>
+            <p>
+                This is to show muslims prayer time using javascript
+            </p>
 
             <!--countdown to new year -->
             <div class="col-sm-4 col-md-6" id="year">
@@ -350,13 +470,18 @@
                     <span id="spo"></span>
                 </div>
             </div>
-
+            <p>
+                This is to show the days left in 2021 before we enter the new year
+            </p>
             <!-- Working Day -->
 
-            <div class="col-sm-4 col-md-6">
+            <div class="col-sm-4 col-md-6" id="mum">
                 <h3>DAYS OF THE WEEK</h3>
                 <h5 style="color: white;" id="dad">00</h5>
             </div>
+            <p>                
+                This is to show each what each day is meant for 
+            </p>
 
             <!--Stop watch-->
             <div class="col-sm-4 col-md-6" id="watch">
@@ -369,10 +494,13 @@
                     <span id="sec">00 MIN</span>
                 </div>
                 <br />
-                <button style="background-color: #800000;" onclick="Start()">Start</button>
-                <button style="background-color: violet;" onclick="stp()">Stop</button>
-                <button style="background-color: cyan;" onclick="Clear()">Clear</button>
+                <button style="background-color: grey;" onclick="Start()">Start</button>
+                <button style="background-color: goldenrod;" onclick="stp()">Stop</button>
+                <button style="background-color: lightblue;" onclick="Clear()">Clear</button>
             </div>
+            <p>
+                This is use for timing
+            </p>
 
             <!--Jamb countdown -->
             <div class="col-sm-4 col-md-6" id="timer">
@@ -383,24 +511,30 @@
                 <br />
                 <button onclick="slt()">Start</button>
             </div>
+            <p>
+
+            </p>
 
             <!--nigeria age -->
             <div class="col-sm-4 col-md-6" id="gue">
-                <h3>Guess: </h3>
+                <h3>AGE: </h3>
                 <input type="text" id="grab3" placeholder="How Old Is Nigeria?">
-                <button onclick="nig()">Check</button><a href="index.html" style="text-decoration: none;"> Go Home</a>
+                <button onclick="nig()">Check</button><a href="index.html" style="text-decoration: none;"><br>HOME</a>
                 <br>
                 <span id="ega"></span>
             </div>
         </div>
     </div>
-
+    <p>
+        This is show show Nigeria current age
+    </p>
 
 
     <!--javascript-->
+
     <script>
         var audio = new Audio(
-            "img/Wiz_Khalifa_-_See_You_Again_Audio__lekkiloaded.com.mp3"
+            "img/Wiz_Khalifa_-See_You_Again_Audio_lekkiloaded.com.mp3"
         );
         //LOAN CALCULATOR
         function loan() {

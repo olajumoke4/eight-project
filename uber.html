@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -22,7 +22,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="niger2.html">niger2</a>
+                <a class="nav-link active" aria-current="page" href="value.html">value</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="PMI.html">PMI</a>
@@ -40,7 +40,7 @@
                     <a class="nav-link" href="zoom.html">zoom</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="value.html">value</a>
+                    <a class="nav-link" href="niger2.html">niger2</a>
                   </li>  
             </ul>
           </div>
@@ -58,25 +58,23 @@
         <center>
         <div class ="jummy">
         
-        <form action="">
-        <h1>Sign up for uber</h1>
-                  <label for="">first name</label><br>
-                  <input type="text" placeholder="firstname" name="firstname" id="first" onkeyup="valuemax()" required><br>
-                  <span id="tunji"></span><br>
-                  <label for="">last name</label><br>
-                  <input type="text" placeholder="lastname" name="lastname" id="last" onkeyup="maxvalue()" required><br>
-                  <span id="ola"></span><br><br>
-                  <label for="">phone number</label><br>
-                  <input type="text" placeholder="phone number" name="phone number" id="phone" onkeyup="value()" required><br>
-                  <span id="tunde"></span><br>
-                  <label for="">email</label><br>
-                  <input type="text" placeholder="email" name="email" id="email" onkeyup="val()" required><br>
-                  <span id="tun"></span><br>
-                  <label for="">password</label><br>
-                  <input type="text" placeholder="password" name="password" id="pass" onkeyup="max()" required><br>
-                  <span id="kola"></span><br>
+        <form name="validation"
+            <h1>Sign up with Uber</h1> 
+            
+          <label for="firstname">firstname:</label>
+           <input type="text" name="firstname" size="12" />
+            <label for="lastname">lastname:</label>
+            <input type="text" name="lastname" size="12" />
+            <label for="phonenumber">phonenumber:</label>
+            <input id="num" placeholder="your phone number" onkeyup="theNumValidate()" /> <br>
+            <span id="inum"></span><br>
+            <label id="mum">Enter your email address </label>
+            <input id="nam" placeholder="write your email" onkeyup="theNameValidate()"/>
+            <span id="inam"></span><br>
+            <label for="passid">Password:</label>
+            <input id="pas" type="password" placeholder="password" onkeyup="thePasValidate()"/><br>
+            <span id="ipas"></span><br>
             <button onsubmit="myfunction()" type="submit" class="ola">Sign in</button>
-            </form>
 
             
 
@@ -98,62 +96,85 @@
         <img src="img/john2.png" alt="myimages" id="tao"> 
 
 <script>
-function valuemax(){
-                  var x=document.getElementById('first').value;
-                  var p=/^[A-Z]+$/;
+function validate(){
+    var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+    var name = document.getElementById('name').value;
+    if(!regName.test(name)){
+        alert('Please enter your full name (first & last name).');
+        document.getElementById('name').focus();
+        return false;
+    }else{
+        alert('Valid name given.');
+        return true;
+    }
+}
+function theNameValidate(){
+            let theTxt= document.getElementById("nam").value;
+            let onlyName = /^[A-Za-z]+$/;
+            let onlyNameLenght = /^[A-Za-z]+.{6,}$/;
 
-                  if (x.match(p)){
-                        document.getElementById('tunji').innerHTML="<span style='color:green;  font-size:15px;'>valid name</span>";
-                        document.getElementById('first').style.border='2px solid green';
-                        document.tunji.focus();
-                        return true
-                  }
-                  else {
-                        document.getElementById('tunji').innerHTML="<span style='color:red;  font-size:15px;'>Invalid name </span>";
-                        document.getElementById('first').style.border='2px solid red';
-                        document.tunji.focus();
-                        return false
-                  }
-                  
-                  }
+            if (theTxt.match(onlyNameLenght)){
+                document.getElementById("inam").innerHTML="<span style='color: green; font-size: 10px;'>Strong username</span>";
+                document.getElementById("nam").style.border="2px solid green";
+                return true;
+            }
+            
+            else if (theTxt.match(onlyName)){
+                document.getElementById("inam").innerHTML="<span style='color: purple; font-size: 10px;'>Not strong enough</span>";
+                document.getElementById("nam").style.border="2px solid purple";
+                return true;
+            }
+            
+            else {
+                document.getElementById("inam").innerHTML="<span style='color: red; font-size: 10px;'> please write your email!</span>";
+                document.getElementById("nam").style.border="2px solid red";
+                return false;
+             }
+        }
 
-                  function maxvalue(){
-                  var x=document.getElementById('last').value;
-                  var p=/^[A-Z]+$/;
 
-                  if (x.match(p)){
-                        document.getElementById('ola').innerHTML="<span style='color:green;  font-size:15px;'>valid name</span>";
-                        document.getElementById('last').style.border='2px solid green';
-                        document.tunji.focus();
-                        return true
-                  }
-                  else {
-                        document.getElementById('ola').innerHTML="<span style='color:red;  font-size:15px;'>Invalid name </span>";
-                        document.getElementById('last').style.border='2px solid red';
-                        document.tunji.focus();
-                        return false
-                  }
-                  
-                  }
+        function theNumValidate(){
+            let theNum = document.getElementById("num").value;
+            let onlyNum = /^[0-9]+$/;
+            let onlyNumLenght = /^[0-9].{10,}$/;
 
-                  function value(){
-                    var x=document.getElementById('phone').value;
-                    var p=/^[A-Za-z]\w{7,14}$/;
-                    if (x.match(p)){
-                      document.getElementById('tunde').innerHTML="<span style='color:green;  font-size:15px;'>correct </span>";
-                      document.getElementById('phone').style.border='2px solid green';
-                      document.ola.focus();
-                      return true
-                    
-                    }
-                    else{
-                      document.getElementById('tunde').innerHTML="<span style='color:green;  font-size:15px;'>wrong </span>";
-                      document.getElementById('phone').style.border='2px solid green';
-                      document.ola.focus();
-                      return false
+            
+            if (theNum.match(onlyNumLenght)){
+                document.getElementById("inum").innerHTML="<span style='color: green; font-size: 10px;'>Very good</span>";
+                document.getElementById("num").style.border="2px solid green";
+                return true;
+            }
 
-                    }
-                  }
+            else if (theNum.match(onlyNum)){
+                document.getElementById("inum").innerHTML="<span style='display: none'></span>";
+                document.getElementById("num").style.border="2px solid purple";
+                return true;
+            }
+
+            else {
+                document.getElementById("inum").innerHTML="<span style='color: red; font-size: 10px;'> Required in numbers only with minimum of ten characters!</span>";
+                document.getElementById("num").style.border="2px solid red";
+                return false;
+             }
+        }
+
+
+        function thePasValidate(){
+            let thePas = document.getElementById("pas").value;
+            let onlyPassword = /^[a-zA-Z0-9!@#$%^&*]{8,}$/;
+
+            if (thePas.match(onlyPassword)){
+                document.getElementById("ipas").innerHTML="<span style='display: none;'></span>";
+                document.getElementById("pas").style.border="2px solid green";
+                return true;
+            }
+
+            else {
+                document.getElementById("ipas").innerHTML="<span style='color: red; font-size: 10px;'> password must be at least 8 characters</span>";
+                document.getElementById("pas").style.border="2px solid red";
+                return false;
+             }
+        }
 </script>
         
 
@@ -162,5 +183,3 @@ function valuemax(){
 
 </body>
 </html>
-            
-        
